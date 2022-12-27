@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>Foodhub</title>
+
+  <!--
+    - custom css link 
+  -->
+  <link rel="stylesheet" href="./assets/css/foodhub.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-wrapper">
+
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="logo" width="130">
+          </a>
+
+          <ul class="navbar-nav">
+
+            <li>
+              <a href="./index.html" class="nav-link">HOUSE</a>
+            </li>
+
+            <li>
+              <a href="./product.html" class="nav-link">PRODUCTS</a>
+            </li>
+
+            <li>
+              <a href="./contact.html" class="nav-link active">CONTACT</a>
+            </li>
+
+
+
+          </ul>
+
+          <div class="navbar-btn-group">
+
+            <button class="shopping-cart-btn">
+              <img src="./assets/images/cart.svg" alt="shopping cart icon" width="18">
+              <!-- <span class="count">5</span> -->
+            </button>
+
+            <button class="menu-toggle-btn">
+              <span class="line one"></span>
+              <span class="line two"></span>
+              <span class="line three"></span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <div class="cart-box">
+
+        <ul class="cart-box-ul">
+
+          <h4 class="cart-h4">Your order.</h4>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu1.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Saumon gravlax</h5>
+              <p class="product-price">
+                <span class="small">$</span>9
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu2.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Chevrefried with honey</h5>
+              <p class="product-price">
+                <span class="small">$</span>14
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu3.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Crispy fish</h5>
+              <p class="product-price">
+                <span class="small">$</span>4
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu4.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Stracciatella</h5>
+              <p class="product-price">
+                <span class="small">$</span>11
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu5.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Sea bream carpaccio</h5>
+              <p class="product-price">
+                <span class="small">$</span>19
+              </p>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="cart-btn-group">
+          <button class="btn btn-secondary">View order</button>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+
+
+    <main><br><br><br><br>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+     <!-- <div class="contact_name_section">
+        <div class="product_main_heading">
+            
+        </div>
+        <div class="contact_main_paragraph">
+            Contact Us
+        </div>
+     </div>
+
+     <div class="main_contact_section">
+        <div class="img_section">
+            <img src="./assets/images/contact-us-image_optimized.webp" alt="">
+        </div>
+        <div class="form_section">2</div>
+     </div> -->
+
+     <!-- <div class="upper_contact">
+      <h1>Contact</h1>
+    </div>
+    <div class="container_contact">
+      <div class="contact-box">
+        <div class="left_contat">
+          <img src="./img/2.webp" alt="">
+        </div>
+        <div class="right_contact">
+          <h2>Contact Us</h2>
+          <input type="text" class="field" placeholder="Name">
+          <input type="text" class="field" placeholder="Phone">
+          <input type="text" class="field" placeholder="Email">
+          <textarea placeholder="Your Message" class="field"></textarea>
+          <button class="btn_contact">Send massage</button>
+        </div>
+      </div>
+    </div> -->
+
+      <!-- <div class="top_contact_text">
+        <h1>Contact</h1>
+      </div> -->
+
+      <div class="main_dev">
+        <div class="upper_contact_text">
+          <h1>Contact</h1>
+        </div>
+        
+        <div class="container_contact_contact">
+          <div class="contact-box_contat">
+            <div class="left_contat">
+              <img src="./assets/images/2.webp" alt="">
+            </div>
+            <div class="right_contact">
+              <h2>Contact Us</h2>
+              <input type="text" class="field" placeholder="Name">
+              <input type="text" class="field" placeholder="Phone">
+              <input type="text" class="field" placeholder="Email">
+              <textarea placeholder="Your Message" class="field"></textarea>
+              <button class="btn_contact">Send massage</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="product" id="menu">
+        <div class="image-section">
+          
+        </div>
+
+        <div class="products-grid">
+
+          <a href="./single_product.html">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu1.png" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+
+              
+
+                <p class="product-text">
+                  Beano Beanbag
+                </p>
+
+                <div class="product-rating">
+                 <h5>PLN 249.99</h5>
+                </div>
+                <button class="btn-product">
+                  Add to cart
+                </button>
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu2.png" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+
+              
+
+                <p class="product-text">
+                  Vents
+                </p>
+
+                <div class="product-rating">
+                  <h5>PLN 249.99</h5>
+                 </div>
+                <button class="btn-product">
+                  Add to cart
+                </button>
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu3.png" alt="product image" class="product-img" width="200" loading="lazy">
+
+                
+              </div>
+
+              <div class="product-content">
+
+
+                <p class="product-text">
+                  Cyber LED masks
+                </p>
+                <div class="product-rating">
+                  <h5>PLN 199.99</h5>
+                 </div>
+                <button class="btn-product">
+                  Add to cart
+                </button>
+              </div>
+
+            </div>
+
+          </a>
+
+      </section>
+
+     
+      
+      <!--
+        - #TESTIMONIALS SECTION
+      -->
+
+    
+
+     
+      
+      
+            <!-- </section> -->
+
+           
+           
+          
+          
+
+    </main>
+
+
+   
+
+
+  
+
+
+    <!--
+      - #FOOTER
+    -->
+
+    <div class="produt_product_footer">
+        <div class="footer">
+            <section class="middle_footer_product">
+              <div class="container-box_footer_product">
+                  <div class="box">
+                    <div class="headeing-top_footer">
+                      <h6>About Us</h5>
+                    </div>
+                    <div class="paragraph_footer">
+                      <p>Our goal is that every person has a chance to enjoy the trends. Every day we see viral products on TikTok, we want to offer them to the average person.</p>
+                    </div>
+                </div>
+               
+                <div class="box">
+                 <div class="headeing-top_footer_last">
+                    <h6>Contact</h5>
+                  </div>
+                  <div class="paragraph_footer_last">
+                    <p>Email:</p>
+                  </div>
+                  <div class="paragraph_last_footer">
+                    <p>alpha.shop@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+           
+      
+        </div>
+      
+    </div>
+    
+  </div>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/foodhub.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

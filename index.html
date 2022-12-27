@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodhub</title>
+
+  <!--
+    - custom css link 
+  -->
+  <link rel="stylesheet" href="./assets/css/foodhub.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-wrapper">
+
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="logo" width="130">
+          </a>
+
+          <ul class="navbar-nav">
+
+            <li>
+              <a href="#home" class="nav-link active">HOUSE</a>
+            </li>
+
+            <li>
+              <a href="./product.html" class="nav-link">PRODUCTS</a>
+            </li>
+
+            <li>
+              <a href="./contact.html" class="nav-link">CONTACT</a>
+            </li>
+
+
+
+          </ul>
+
+          <div class="navbar-btn-group">
+
+            <button class="shopping-cart-btn">
+              <img src="./assets/images/cart.svg" alt="shopping cart icon" width="18">
+              <!-- <span class="count">5</span> -->
+            </button>
+
+            <button class="menu-toggle-btn">
+              <span class="line one"></span>
+              <span class="line two"></span>
+              <span class="line three"></span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <div class="cart-box">
+
+        <ul class="cart-box-ul">
+
+          <h4 class="cart-h4">Your order.</h4>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu1.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Saumon gravlax</h5>
+              <p class="product-price">
+                <span class="small">$</span>9
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu2.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Chevrefried with honey</h5>
+              <p class="product-price">
+                <span class="small">$</span>14
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu3.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Crispy fish</h5>
+              <p class="product-price">
+                <span class="small">$</span>4
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu4.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Stracciatella</h5>
+              <p class="product-price">
+                <span class="small">$</span>11
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./assets/images/menu5.jpg" alt="product image" class="product-img" width="50" height="50"
+                  loading="lazy">
+              </div>
+
+              <h5 class="product-name">Sea bream carpaccio</h5>
+              <p class="product-price">
+                <span class="small">$</span>19
+              </p>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="cart-btn-group">
+          <button class="btn btn-secondary">View order</button>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+      <div class="continer-fluid">
+        <section class="home" id="home">
+
+          <div class="home-left">
+  
+          
+  
+            <h1 class="main-heading">Gift Shop</h1>
+  
+            <p class="home-text">
+              Here you will find all the latest gadgets and viral products
+            </p>
+  
+            <div class="text-group">
+            
+              <i class="icon-box fa-sharp fa-solid fa-square-check"></i>
+              <h5> Upper Services </h5>
+  
+              <i class="icon-box fa-sharp fa-solid fa-square-check"></i>
+              <h5> High Quality </h5>
+  
+              <i class="icon-box fa-sharp fa-solid fa-square-check"></i>
+              <h5> Free Delivery </h5>
+            </div>
+  
+            <div class="btn-group">
+  
+              <button class="btn btn-primary btn-icon" style="background-color:#e8363c ;color: #fff">
+              
+                View The Store
+              </button>
+  
+            
+  
+            </div>
+  
+          </div>
+  
+          <div class="home-right">
+  
+            <img src="./assets/images/food1.png" alt="food image" class="food-img food-1" width="200" loading="lazy">
+           
+  
+          </div>
+  
+        </section>
+      </div>
+
+
+
+      <section class="middle">
+        <div class="container-box">
+            <div class="box">
+              <i class="fa-solid fa-business-time" style="font-size: 35px;color: #fff;display: flex;justify-content: center;padding-bottom: 10px;"></i>
+              <div class="headeing-top">
+                <h6>Safe</h5>
+              </div>
+              <div class="paragraph">
+                <p>100% Secure Payments</p>
+              </div>
+          </div>
+          <div class="box">
+            <i class="fa-regular fa-phone-volume" style="font-size: 35px;color: #fff;display: flex;justify-content: center;padding-bottom: 10px;"></i>
+            <div class="headeing-top">
+              <h6>Come Back</h5>
+            </div>
+            <div class="paragraph">
+              <p>30-day returns</p>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-business-time" style="font-size: 35px;color: #fff;display: flex;justify-content: center;padding-bottom: 10px;"></i>
+            <div class="headeing-top">
+              <h6>27/7 Support</h5>
+            </div>
+            <div class="paragraph">
+              <p>Dedicated support</p>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-business-time" style="font-size: 35px;color: #fff;display: flex;justify-content: center;padding-bottom: 10px;"></i>
+            <div class="headeing-top">
+              <h6>free shipping</h5>
+            </div>
+            <div class="paragraph">
+              <p>For all orders</p>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+      <section class="product" id="menu">
+        <div class="image-section">
+          <div class="container-boxs">
+            <div class="boxs">
+              <div class="top_heading">
+                <h4>See our latest products</h4>
+              </div><br>
+              <div class="paragraph_heading">
+                <p>news</p>
+              </div>
+            </div>
+            <div class="boxs">
+              <div class="button">
+                <button class="btn" style="color: black;font-family: 'Chivo Mono', monospace;border: 1px solid gray;">
+                  View The Store
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid">
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu1.png" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+
+              
+
+                <p class="product-text">
+                  Beano Beanbag
+                </p>
+
+                <div class="product-rating">
+                 <h5>PLN 249.99</h5>
+                </div>
+                <button class="btn-product">
+                  Add to cart
+                </button>
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu2.png" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+
+              
+
+                <p class="product-text">
+                  Vents
+                </p>
+
+                <div class="product-rating">
+                  <h5>PLN 249.99</h5>
+                 </div>
+                <button class="btn-product">
+                  Add to cart
+                </button>
+              </div>
+
+            </div>
+
+          </a>
+
+          <a href="#">
+
+            <div class="product-card">
+
+              <div class="img-box">
+                <img src="./assets/images/menu3.png" alt="product image" class="product-img" width="200" loading="lazy">
+
+                
+              </div>
+
+              <div class="product-content">
+
+
+                <p class="product-text">
+                  Cyber LED masks
+                </p>
+                <div class="product-rating">
+                  <h5>PLN 199.99</h5>
+                 </div>
+                <button class="btn-product">
+                  Add to cart
+                </button>
+              </div>
+
+            </div>
+
+          </a>
+
+      </section>
+
+     
+      <section class="testimonials" id="testimonials">
+          <a href="#">
+      
+                  <div class="product-card">
+      
+                    <div class="img-box_bg">
+                      <div class="box_center_main">
+                        <div class="main_heading">
+                          <h1>Viral products</h1>
+                        </div>
+                        
+                        <div class="main_paragraph">
+                          <p>We want popular social media products to be available to all people, also in Poland.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="center_box">
+                      <div class="main_heading_center">
+                        <h1>Viral products</h1>
+                      </div>
+                      
+                      <div class="main_paragraph_center">
+                        <p>We want popular social media products to be available to all people, also in Poland.</p>
+                      </div>
+                    </div>
+                  </div>
+      
+                </a>
+      </section>
+
+      <!--
+        - #TESTIMONIALS SECTION
+      -->
+
+      <div class="text_heading_center">
+        <h4 class="cart-title_heading">Most popular products</h4>
+      </div>
+
+      <section class="testimonials" id="testimonials">
+
+        <div class="testimonials-grid">
+
+          <div class="testimonials-card">
+
+
+                <a href="#">
+      
+                  <div class="product-card">
+      
+                    <div class="img-box">
+                      <img src="./assets/images/menu3.png" alt="product image" class="product-img" width="200" loading="lazy">
+                    </div>
+      
+                    <div class="product-content">
+      
+                    
+      
+                      <p class="product-text">
+                        Beano Beanbag
+                      </p>
+      
+                      <div class="product-rating">
+                       <h5>PLN 249.99</h5>
+                      </div>
+                      <button class="btn-product">
+                        Add to cart
+                      </button>
+                    </div>
+      
+                  </div>
+      
+                </a>
+      
+      
+            <!-- </section> -->
+
+            <div class="customer-info">
+             
+
+              <!-- <h5 class="customer-name">Emma Newman</h5> -->
+            </div>
+
+          </div>
+
+          <div class="testimonials-card">
+          
+            <!-- <h4 class="card-title">I have lunch here every day</h4>
+          
+            <div class="testimonials-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div> -->
+          
+           
+            <a href="#">
+      
+              <div class="product-card">
+  
+                <div class="img-box">
+                  <img src="./assets/images/menu2.png" alt="product image" class="product-img" width="200" loading="lazy">
+                </div>
+  
+                <div class="product-content">
+  
+                
+  
+                  <p class="product-text">
+                    Beano Beanbag
+                  </p>
+  
+                  <div class="product-rating">
+                   <h5>PLN 249.99</h5>
+                  </div>
+                  <button class="btn-product">
+                    Add to cart
+                  </button>
+                </div>
+  
+              </div>
+  
+            </a>
+            <div class="customer-info">
+              <!-- <div class="customer-img-box">
+                <img src="./assets/images/testimonials2.jpg" alt="customer image" class="customer-img" width="100" loading="lazy">
+              </div> -->
+          
+              <!-- <h5 class="customer-name">Paul Trueman</h5> -->
+            </div>
+          
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <section class="testimonials" id="testimonials">
+      
+
+            <div class="testimonials-grid">
+
+              <div class="testimonials-card">
+                <a href="#">
+  
+                  <div class="product-card">
+      
+                    <div class="img-box_newslatter">
+                      <div class="center_box_newslatter">
+                          <div class="newslatter_heading">
+                            <h1>newslatter</h1>
+                          </div>
+                          <div class="newslatter_paragraph">
+                            <p>Stay up to date with all promotions!</p>
+                          </div>
+                          <div class="newslatter_search_bar">
+                            <div class="search_search">
+                              <input type="text" class="search_bar" value="e-mail newslatter">
+                            </div>
+                            <button class="button_search">
+                              Subscribe
+                            </button>
+                          </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+      
+                </a>
+              </div>
+            </div>
+  </section>
+
+
+
+
+  <div class="last_Section">
+    <section class="product" id="menu">
+      <!-- <div class="image-section">
+        <div class="container-boxs">
+          <div class="boxs">
+            <div class="top_heading">
+              <h4>See our latest products</h4>
+            </div><br>
+            <div class="paragraph_heading">
+              <p>news</p>
+            </div>
+          </div>
+          <div class="boxs">
+            <div class="button">
+              <button class="btn" style="color: black;font-family: 'Chivo Mono', monospace;border: 1px solid gray;">
+                View The Store
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="products-grid">
+
+        <a href="#">
+
+          <div class="product-card">
+
+            <div class="img-box">
+              <img src="./assets/images/menu1.png" alt="product image" class="product-img" width="200" loading="lazy">
+            </div>
+
+            <div class="product-content">
+
+            
+
+              <p class="product-text_last">
+                Beano Beanbag
+              </p>
+
+              <div class="product-rating">
+               <h5>PLN 249.99</h5>
+              </div>
+              <button class="btn-product">
+                Add to cart
+              </button>
+            </div>
+
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="product-card">
+
+            <div class="img-box">
+              <img src="./assets/images/menu2.png" alt="product image" class="product-img" width="200" loading="lazy">
+            </div>
+
+            <div class="product-content">
+
+            
+
+              <p class="product-text_last">
+                Vents
+              </p>
+
+              <div class="product-rating">
+                <h5>PLN 249.99</h5>
+               </div>
+              <button class="btn-product">
+                Add to cart
+              </button>
+            </div>
+
+          </div>
+
+        </a>
+
+        <a href="#">
+
+          <div class="product-card">
+
+            <!-- <div class="img-box">
+              <img src="./assets/images/menu3.png" alt="product image" class="product-img" width="200" loading="lazy">
+
+              
+            </div> -->
+
+            <div class="product-content">
+
+
+              <p class="product-text_lasts">
+                daily
+              </p>
+              <div class="product-rating_last">
+                <h5>Special discounts</h5>
+               </div>
+               <div class="product-rating_paragraph">
+                <h5>See the selected product with a special discount.</h5>
+               </div>
+              <button class="btn-product_last">
+                VIEW THE STORE
+              </button>
+            </div>
+
+          </div>
+
+        </a>
+
+    </section>
+  </div>
+
+
+
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+      <section class="middle_footer">
+        <div class="container-box_footer">
+            <div class="box">
+              <div class="headeing-top_footer">
+                <h6>About Us</h5>
+              </div>
+              <div class="paragraph_footer">
+                <p>Our goal is that every person has a chance to enjoy the trends. Every day we see viral products on TikTok, we want to offer them to the average person.</p>
+              </div>
+          </div>
+          
+          <div class="box">
+           <div class="headeing-top_footer_last">
+              <h6>Contact</h5>
+            </div>
+            <div class="paragraph_footer_last">
+              <p>Email:</p>
+            </div>
+            <div class="paragraph_last_footer">
+              <p>alpha.shop@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+    </footer>
+
+  </div>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/foodhub.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
